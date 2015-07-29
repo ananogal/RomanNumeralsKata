@@ -83,5 +83,11 @@ DecimalToRomanConverter *converter;
     XCTAssertTrue([result isEqualToString:@"IX"]);
 }
 
+- (void)testSouldConvert3490ToMMMCDXC{
+    
+    NSString *result = [converter convert:3490];
+    
+    XCTAssertTrue([result isEqualToString:@"MMMCDXC"]);
+}
 
 @end
