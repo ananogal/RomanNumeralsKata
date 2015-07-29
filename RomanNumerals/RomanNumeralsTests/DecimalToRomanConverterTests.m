@@ -69,4 +69,19 @@ DecimalToRomanConverter *converter;
     XCTAssertTrue([result isEqualToString:@"XVIII"]);
 }
 
+- (void)testSouldConvertFourToIV {
+    
+    NSString *result = [converter convert:4];
+    
+    XCTAssertTrue([result isEqualToString:@"IV"]);
+}
+
+- (void)testSouldConvertNineToIX {
+    
+    NSString *result = [converter convert:9];
+    
+    XCTAssertTrue([result isEqualToString:@"IX"]);
+}
+
+
 @end

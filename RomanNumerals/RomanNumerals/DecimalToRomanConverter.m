@@ -14,8 +14,11 @@
     self = [super init];
     if (self) {
         self.mapper = [NSMutableArray array];
+        
         [self.mapper addObject:[DecimalToRopmanMapper mappDecimal:10 ToRoman:@"X"]];
+        [self.mapper addObject:[DecimalToRopmanMapper mappDecimal:9 ToRoman:@"IX"]];
         [self.mapper addObject:[DecimalToRopmanMapper mappDecimal:5 ToRoman:@"V"]];
+        [self.mapper addObject:[DecimalToRopmanMapper mappDecimal:4 ToRoman:@"IV"]];
         [self.mapper addObject:[DecimalToRopmanMapper mappDecimal:1 ToRoman:@"I"]];
     }
     return self;
