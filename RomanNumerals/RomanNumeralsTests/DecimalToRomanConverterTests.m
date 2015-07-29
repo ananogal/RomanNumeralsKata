@@ -24,4 +24,21 @@
     
     XCTAssertTrue([result isEqualToString:@"I"]);
 }
+
+- (void)testShouldConvertTwoToII {
+    DecimalToRomanConverter *converter = [[DecimalToRomanConverter alloc]init];
+    
+    NSString *result = [converter convert:2];
+    
+    XCTAssertTrue([result isEqualToString:@"II"]);
+}
+
+- (void)testSouldConvertThreeToIII {
+    DecimalToRomanConverter *converter = [[DecimalToRomanConverter alloc]init];
+    
+    NSString *result = [converter convert:3];
+    
+    XCTAssertTrue([result isEqualToString:@"III"]);
+}
+
 @end
