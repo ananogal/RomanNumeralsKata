@@ -54,6 +54,19 @@ DecimalToRomanConverter *converter;
     XCTAssertTrue([result isEqualToString:@"VIII"]);
 }
 
+- (void)testSouldConvertTenToX {
+    
+    NSString *result = [converter convert:10];
+    
+    XCTAssertTrue([result isEqualToString:@"X"]);
+}
 
+
+- (void)testSouldConvertEighteenToXVIII {
+    
+    NSString *result = [converter convert:18];
+    
+    XCTAssertTrue([result isEqualToString:@"XVIII"]);
+}
 
 @end

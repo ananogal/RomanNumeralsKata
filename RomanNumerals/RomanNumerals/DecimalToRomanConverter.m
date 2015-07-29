@@ -6,6 +6,12 @@
 
     NSString* roman = @"";
     
+    if(decimal >= 10)
+    {
+        roman = [NSString stringWithFormat:@"%@%@", roman, @"X"];
+        decimal -= 10;
+    }
+    
     if(decimal >= 5)
     {
         roman = [NSString stringWithFormat:@"%@%@", roman, @"V"];
