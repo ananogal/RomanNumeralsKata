@@ -1,121 +1,38 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import <XCParameterizedTestCase/XCParameterizedTestCase.h>
 #import "DecimalToRomanConverter.h"
 
-@interface DecimalToRomanConverterTests : XCTestCase
+@interface DecimalToRomanConverterTests : XCParameterizedTestCase
 
 @end
 
 @implementation DecimalToRomanConverterTests
 
-DecimalToRomanConverter *converter;
-
-- (void)setUp {
-    [super setUp];
-    converter = [[DecimalToRomanConverter alloc]init];
++ (NSArray *)testCaseData {
+    return @[
+             [XCTestCaseData createWithInputValue:@1 withExpectedValue:@"I"],
+             [XCTestCaseData createWithInputValue:@2 withExpectedValue:@"II"],
+             [XCTestCaseData createWithInputValue:@3 withExpectedValue:@"III"],
+             [XCTestCaseData createWithInputValue:@5 withExpectedValue:@"V"],
+             [XCTestCaseData createWithInputValue:@8 withExpectedValue:@"VIII"],
+             [XCTestCaseData createWithInputValue:@10 withExpectedValue:@"X"],
+             [XCTestCaseData createWithInputValue:@18 withExpectedValue:@"XVIII"],
+             [XCTestCaseData createWithInputValue:@4 withExpectedValue:@"IV"],
+             [XCTestCaseData createWithInputValue:@9 withExpectedValue:@"IX"],
+             [XCTestCaseData createWithInputValue:@50 withExpectedValue:@"L"],
+             [XCTestCaseData createWithInputValue:@100 withExpectedValue:@"C"],
+             [XCTestCaseData createWithInputValue:@500 withExpectedValue:@"D"],
+             [XCTestCaseData createWithInputValue:@2499 withExpectedValue:@"MMCDXCIX"],
+             [XCTestCaseData createWithInputValue:@3949 withExpectedValue:@"MMMCMXLIX"]
+             ];
 }
 
-- (void)tearDown {
-    [super tearDown];
+- (void)testShouldConvertADecimalIntoARoman {
+    
+    DecimalToRomanConverter *converter = [[DecimalToRomanConverter alloc]init];
+    NSString* result = [converter convert:[self.input integerValue]];
+    
+    XCTAssertEqualObjects(self.expected, result);
 }
-
-- (void)testShouldConvertOneToI {
-    
-    NSString *result = [converter convert:1];
-    
-    XCTAssertTrue([result isEqualToString:@"I"]);
-}
-
-- (void)testShouldConvertTwoToII {
-    
-    NSString *result = [converter convert:2];
-    
-    XCTAssertTrue([result isEqualToString:@"II"]);
-}
-
-- (void)testSouldConvertThreeToIII {
-    
-    NSString *result = [converter convert:3];
-    
-    XCTAssertTrue([result isEqualToString:@"III"]);
-}
-
-- (void)testSouldConvertFiveToV {
-    
-    NSString *result = [converter convert:5];
-    
-    XCTAssertTrue([result isEqualToString:@"V"]);
-}
-
-- (void)testSouldConvertEightToVIII {
-    
-    NSString *result = [converter convert:8];
-    
-    XCTAssertTrue([result isEqualToString:@"VIII"]);
-}
-
-- (void)testSouldConvertTenToX {
-    
-    NSString *result = [converter convert:10];
-    
-    XCTAssertTrue([result isEqualToString:@"X"]);
-}
-
-
-- (void)testSouldConvertEighteenToXVIII {
-    
-    NSString *result = [converter convert:18];
-    
-    XCTAssertTrue([result isEqualToString:@"XVIII"]);
-}
-
-- (void)testSouldConvertFourToIV {
-    
-    NSString *result = [converter convert:4];
-    
-    XCTAssertTrue([result isEqualToString:@"IV"]);
-}
-
-- (void)testSouldConvertNineToIX {
-    
-    NSString *result = [converter convert:9];
-    
-    XCTAssertTrue([result isEqualToString:@"IX"]);
-}
-
-- (void)testSouldConvertFithtyToL {
-    
-    NSString *result = [converter convert:50];
-    
-    XCTAssertTrue([result isEqualToString:@"L"]);
-}
-
-- (void)testSouldConvert100ToC {
-    
-    NSString *result = [converter convert:100];
-    
-    XCTAssertTrue([result isEqualToString:@"C"]);
-}
-
-- (void)testSouldConvert500ToD {
-    
-    NSString *result = [converter convert:500];
-    
-    XCTAssertTrue([result isEqualToString:@"D"]);
-}
-
-- (void)testSouldConvert2499ToMMCDXCIX{
-    
-    NSString *result = [converter convert:2499];
-    
-    XCTAssertTrue([result isEqualToString:@"MMCDXCIX"]);
-}
-
-- (void)testSouldConvert3949ToMMMCMXLIX{
-    
-    NSString *result = [converter convert:3949];
-    
-    XCTAssertTrue([result isEqualToString:@"MMMCMXLIX"]);
-}
-
 @end

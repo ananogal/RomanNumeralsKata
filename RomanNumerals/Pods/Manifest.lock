@@ -1,0 +1,10 @@
+PODS:
+  - XCParameterizedTestCase (1.0.1)
+
+DEPENDENCIES:
+  - XCParameterizedTestCase (>= 1.0.1)
+
+SPEC CHECKSUMS:
+  XCParameterizedTestCase: 55b4888603493dea7eb42aef439a63910d0959d3
+
+COCOAPODS: 0.37.2
