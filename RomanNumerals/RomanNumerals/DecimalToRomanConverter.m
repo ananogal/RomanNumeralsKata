@@ -1,27 +1,37 @@
 #import "DecimalToRomanConverter.h"
+#import "DecimalToRopmanMapper.h"
+
+@interface DecimalToRomanConverter ()
+
+@property (nonatomic, strong) NSMutableArray* mapper;
+
+@end
 
 @implementation DecimalToRomanConverter
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.mapper = [NSMutableArray array];
+        [self.mapper addObject:[DecimalToRopmanMapper mappDecimal:10 ToRoman:@"X"]];
+        [self.mapper addObject:[DecimalToRopmanMapper mappDecimal:5 ToRoman:@"V"]];
+        [self.mapper addObject:[DecimalToRopmanMapper mappDecimal:1 ToRoman:@"I"]];
+    }
+    return self;
+}
 
 -(NSString*)convert:(NSInteger)decimal {
 
     NSString* roman = @"";
     
-    if(decimal >= 10)
-    {
-        roman = [NSString stringWithFormat:@"%@%@", roman, @"X"];
-        decimal -= 10;
+    for (int i = 0; i < [self.mapper count]; i++) {
+        DecimalToRopmanMapper *mapped = self.mapper[i];
+        while (decimal >= mapped.decimal) {
+            roman = [NSString stringWithFormat:@"%@%@", roman, mapped.roman];
+            decimal -= mapped.decimal;
+        }
     }
-    
-    if(decimal >= 5)
-    {
-        roman = [NSString stringWithFormat:@"%@%@", roman, @"V"];
-        decimal -=5;
-    }
-    
-    for (int i = 0; i < decimal; i ++) {
-        roman = [NSString stringWithFormat:@"%@%@", roman, @"I"];
-    }
-    
     return roman;
 }
 

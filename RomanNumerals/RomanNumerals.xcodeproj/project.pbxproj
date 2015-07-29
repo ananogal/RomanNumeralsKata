@@ -10,6 +10,7 @@
 		937FD2451B68D4D600DEFCF3 /* libRomanNumerals.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 937FD2391B68D4D600DEFCF3 /* libRomanNumerals.a */; };
 		937FD2541B68D51500DEFCF3 /* DecimalToRomanConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 937FD2531B68D51500DEFCF3 /* DecimalToRomanConverterTests.m */; };
 		937FD2571B68D59A00DEFCF3 /* DecimalToRomanConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 937FD2561B68D59A00DEFCF3 /* DecimalToRomanConverter.m */; };
+		937FD25A1B68DAF300DEFCF3 /* DecimalToRopmanMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 937FD2591B68DAF300DEFCF3 /* DecimalToRopmanMapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,8 @@
 		937FD2531B68D51500DEFCF3 /* DecimalToRomanConverterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecimalToRomanConverterTests.m; sourceTree = "<group>"; };
 		937FD2551B68D59A00DEFCF3 /* DecimalToRomanConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecimalToRomanConverter.h; sourceTree = "<group>"; };
 		937FD2561B68D59A00DEFCF3 /* DecimalToRomanConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecimalToRomanConverter.m; sourceTree = "<group>"; };
+		937FD2581B68DAF300DEFCF3 /* DecimalToRopmanMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecimalToRopmanMapper.h; sourceTree = "<group>"; };
+		937FD2591B68DAF300DEFCF3 /* DecimalToRopmanMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecimalToRopmanMapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 			children = (
 				937FD2551B68D59A00DEFCF3 /* DecimalToRomanConverter.h */,
 				937FD2561B68D59A00DEFCF3 /* DecimalToRomanConverter.m */,
+				937FD2581B68DAF300DEFCF3 /* DecimalToRopmanMapper.h */,
+				937FD2591B68DAF300DEFCF3 /* DecimalToRopmanMapper.m */,
 			);
 			path = RomanNumerals;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				937FD25A1B68DAF300DEFCF3 /* DecimalToRopmanMapper.m in Sources */,
 				937FD2571B68D59A00DEFCF3 /* DecimalToRomanConverter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
