@@ -40,4 +40,20 @@ DecimalToRomanConverter *converter;
     XCTAssertTrue([result isEqualToString:@"III"]);
 }
 
+- (void)testSouldConvertFiveToV {
+    
+    NSString *result = [converter convert:5];
+    
+    XCTAssertTrue([result isEqualToString:@"V"]);
+}
+
+- (void)testSouldConvertEightToVIII {
+    
+    NSString *result = [converter convert:8];
+    
+    XCTAssertTrue([result isEqualToString:@"VIII"]);
+}
+
+
+
 @end
