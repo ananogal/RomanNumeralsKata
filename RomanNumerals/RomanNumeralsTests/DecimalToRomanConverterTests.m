@@ -8,8 +8,11 @@
 
 @implementation DecimalToRomanConverterTests
 
+DecimalToRomanConverter *converter;
+
 - (void)setUp {
     [super setUp];
+    converter = [[DecimalToRomanConverter alloc]init];
 }
 
 - (void)tearDown {
@@ -18,15 +21,12 @@
 
 - (void)testShouldConvertOneToI {
     
-    DecimalToRomanConverter *converter = [[DecimalToRomanConverter alloc]init];
-    
     NSString *result = [converter convert:1];
     
     XCTAssertTrue([result isEqualToString:@"I"]);
 }
 
 - (void)testShouldConvertTwoToII {
-    DecimalToRomanConverter *converter = [[DecimalToRomanConverter alloc]init];
     
     NSString *result = [converter convert:2];
     
@@ -34,7 +34,6 @@
 }
 
 - (void)testSouldConvertThreeToIII {
-    DecimalToRomanConverter *converter = [[DecimalToRomanConverter alloc]init];
     
     NSString *result = [converter convert:3];
     
