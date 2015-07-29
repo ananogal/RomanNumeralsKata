@@ -83,11 +83,39 @@ DecimalToRomanConverter *converter;
     XCTAssertTrue([result isEqualToString:@"IX"]);
 }
 
-- (void)testSouldConvert3490ToMMMCDXC{
+- (void)testSouldConvertFithtyToL {
     
-    NSString *result = [converter convert:3490];
+    NSString *result = [converter convert:50];
     
-    XCTAssertTrue([result isEqualToString:@"MMMCDXC"]);
+    XCTAssertTrue([result isEqualToString:@"L"]);
+}
+
+- (void)testSouldConvert100ToC {
+    
+    NSString *result = [converter convert:100];
+    
+    XCTAssertTrue([result isEqualToString:@"C"]);
+}
+
+- (void)testSouldConvert500ToD {
+    
+    NSString *result = [converter convert:500];
+    
+    XCTAssertTrue([result isEqualToString:@"D"]);
+}
+
+- (void)testSouldConvert2499ToMMCDXCIX{
+    
+    NSString *result = [converter convert:2499];
+    
+    XCTAssertTrue([result isEqualToString:@"MMCDXCIX"]);
+}
+
+- (void)testSouldConvert3949ToMMMCMXLIX{
+    
+    NSString *result = [converter convert:3949];
+    
+    XCTAssertTrue([result isEqualToString:@"MMMCMXLIX"]);
 }
 
 @end
