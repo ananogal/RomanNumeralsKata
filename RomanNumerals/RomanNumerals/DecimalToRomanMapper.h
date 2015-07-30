@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@interface DecimalToRopmanMapper : NSObject
+@interface DecimalToRomanMapper : NSObject
 
 @property (nonatomic, assign, readonly) NSInteger decimal;
 @property (nonatomic, copy, readonly) NSString* roman;

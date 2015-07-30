@@ -1,13 +1,13 @@
-#import "DecimalToRopmanMapper.h"
+#import "DecimalToRomanMapper.h"
 
-@interface DecimalToRopmanMapper()
+@interface DecimalToRomanMapper()
 
 @property (nonatomic, assign, readwrite) NSInteger decimal;
 @property (nonatomic, copy, readwrite) NSString* roman;
 
 @end
 
-@implementation DecimalToRopmanMapper
+@implementation DecimalToRomanMapper
 
 + (instancetype)mappDecimal:(NSInteger)decimal ToRoman:(NSString*)roman {
     return [[self alloc] initWithDecimal:decimal AndRoman:roman];
