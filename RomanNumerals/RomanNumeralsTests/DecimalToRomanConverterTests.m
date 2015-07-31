@@ -35,4 +35,5 @@
     
     XCTAssertEqualObjects(self.expected, result);
 }
+
 @end
