@@ -15,20 +15,20 @@
     if (self) {
         
         self.mapper = @[
-                        [DecimalToRomanMapper mappDecimal:1000 ToRoman:@"M"],
-                        [DecimalToRomanMapper mappDecimal:1000 ToRoman:@"M"],
-                        [DecimalToRomanMapper mappDecimal:900 ToRoman:@"CM"],
-                        [DecimalToRomanMapper mappDecimal:500 ToRoman:@"D"],
-                        [DecimalToRomanMapper mappDecimal:400 ToRoman:@"CD"],
-                        [DecimalToRomanMapper mappDecimal:100 ToRoman:@"C"],
-                        [DecimalToRomanMapper mappDecimal:90 ToRoman:@"XC"],
-                        [DecimalToRomanMapper mappDecimal:50 ToRoman:@"L"],
-                        [DecimalToRomanMapper mappDecimal:40 ToRoman:@"XL"],
-                        [DecimalToRomanMapper mappDecimal:10 ToRoman:@"X"],
-                        [DecimalToRomanMapper mappDecimal:9 ToRoman:@"IX"],
-                        [DecimalToRomanMapper mappDecimal:5 ToRoman:@"V"],
-                        [DecimalToRomanMapper mappDecimal:4 ToRoman:@"IV"],
-                        [DecimalToRomanMapper mappDecimal:1 ToRoman:@"I"]
+                        [DecimalToRomanMapper mappDecimal:1000 toRoman:@"M"],
+                        [DecimalToRomanMapper mappDecimal:1000 toRoman:@"M"],
+                        [DecimalToRomanMapper mappDecimal:900 toRoman:@"CM"],
+                        [DecimalToRomanMapper mappDecimal:500 toRoman:@"D"],
+                        [DecimalToRomanMapper mappDecimal:400 toRoman:@"CD"],
+                        [DecimalToRomanMapper mappDecimal:100 toRoman:@"C"],
+                        [DecimalToRomanMapper mappDecimal:90 toRoman:@"XC"],
+                        [DecimalToRomanMapper mappDecimal:50 toRoman:@"L"],
+                        [DecimalToRomanMapper mappDecimal:40 toRoman:@"XL"],
+                        [DecimalToRomanMapper mappDecimal:10 toRoman:@"X"],
+                        [DecimalToRomanMapper mappDecimal:9 toRoman:@"IX"],
+                        [DecimalToRomanMapper mappDecimal:5 toRoman:@"V"],
+                        [DecimalToRomanMapper mappDecimal:4 toRoman:@"IV"],
+                        [DecimalToRomanMapper mappDecimal:1 toRoman:@"I"]
                         ];
     }
     

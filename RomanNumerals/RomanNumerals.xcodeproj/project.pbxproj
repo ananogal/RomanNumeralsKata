@@ -11,6 +11,7 @@
 		937FD2541B68D51500DEFCF3 /* DecimalToRomanConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 937FD2531B68D51500DEFCF3 /* DecimalToRomanConverterTests.m */; };
 		937FD2571B68D59A00DEFCF3 /* DecimalToRomanConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 937FD2561B68D59A00DEFCF3 /* DecimalToRomanConverter.m */; };
 		937FD25A1B68DAF300DEFCF3 /* DecimalToRomanMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 937FD2591B68DAF300DEFCF3 /* DecimalToRomanMapper.m */; };
+		93F4C4AE1B8356C4002B3CF8 /* DecimalToRomanMapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F4C4AD1B8356C4002B3CF8 /* DecimalToRomanMapperTests.m */; };
 		F68D8AC76DC5031F5509468A /* libPods-RomanNumeralsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5AD19C1886A68E491A87C6 /* libPods-RomanNumeralsTests.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		937FD2561B68D59A00DEFCF3 /* DecimalToRomanConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecimalToRomanConverter.m; sourceTree = "<group>"; };
 		937FD2581B68DAF300DEFCF3 /* DecimalToRomanMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecimalToRomanMapper.h; sourceTree = "<group>"; };
 		937FD2591B68DAF300DEFCF3 /* DecimalToRomanMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecimalToRomanMapper.m; sourceTree = "<group>"; };
+		93F4C4AD1B8356C4002B3CF8 /* DecimalToRomanMapperTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecimalToRomanMapperTests.m; sourceTree = "<group>"; };
 		AB5805E4D66BC5F3908A9FAE /* Pods-RomanNumeralsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RomanNumeralsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RomanNumeralsTests/Pods-RomanNumeralsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 			children = (
 				937FD2491B68D4D600DEFCF3 /* Supporting Files */,
 				937FD2531B68D51500DEFCF3 /* DecimalToRomanConverterTests.m */,
+				93F4C4AD1B8356C4002B3CF8 /* DecimalToRomanMapperTests.m */,
 			);
 			path = RomanNumeralsTests;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				937FD2541B68D51500DEFCF3 /* DecimalToRomanConverterTests.m in Sources */,
+				93F4C4AE1B8356C4002B3CF8 /* DecimalToRomanMapperTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

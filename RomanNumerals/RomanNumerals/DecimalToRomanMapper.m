@@ -9,11 +9,11 @@
 
 @implementation DecimalToRomanMapper
 
-+ (instancetype)mappDecimal:(NSInteger)decimal ToRoman:(NSString*)roman {
-    return [[self alloc] initWithDecimal:decimal AndRoman:roman];
++ (instancetype)mappDecimal:(NSInteger)decimal toRoman:(NSString*)roman {
+    return [[self alloc] initWithDecimal:decimal andRoman:roman];
 }
 
-- (instancetype)initWithDecimal:(NSInteger)decimal AndRoman:(NSString*)roman
+- (instancetype)initWithDecimal:(NSInteger)decimal andRoman:(NSString*)roman
 {
     self = [super init];
     if (self) {
@@ -25,7 +25,7 @@
 
 - (instancetype)init
 {
-    return [self initWithDecimal:0 AndRoman:nil];
+    return [self initWithDecimal:0 andRoman:@""];
 }
 
 @end

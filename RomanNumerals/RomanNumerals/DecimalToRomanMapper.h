@@ -5,6 +5,6 @@
 @property (nonatomic, assign, readonly) NSInteger decimal;
 @property (nonatomic, copy, readonly) NSString* roman;
 
-+ (instancetype)mappDecimal:(NSInteger)decimal ToRoman:(NSString*)roman;
++ (instancetype)mappDecimal:(NSInteger)decimal toRoman:(NSString*)roman;
 
 @end
